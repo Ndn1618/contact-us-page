@@ -55,12 +55,14 @@ img {
 
 .site-header {
     width: 30%;
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
 
 .site-header-heading {
     margin-top: 0;
     margin-bottom: 16px;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .site-header-text {
@@ -96,25 +98,35 @@ img {
 }
 
 .meassage-form-heading {
+    font-size: 23px;
     margin-top: 0;
     margin-bottom: 20px;
     color: #777;
 }
 
-.input {
+.input,
+.textarea {
     border: none;
     border-bottom: 2px solid #bbb;
     padding: 10px 0;
     margin-bottom: 40px;
 }
 
-.input:focus {
+.textarea {
+    max-width: 100%;
+    max-height: 50px;
+}
+
+.input:focus,
+.textarea:focus {
     outline: none;
     border-bottom-color: #621262;
 }
 
 .communication-box {
     margin-bottom: 40px;
+    padding-left: 20px;
+    font-size: 18px;
 }
 
 .communication-box-text {
@@ -124,6 +136,7 @@ img {
 }
 
 .submit-btn {
+    font-size: 23px;
     border: none;
     background-color: #621262;
     padding: 17px 80px;

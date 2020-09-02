@@ -18,23 +18,23 @@
                 <form class="message-form" action="https://echo.htmlacademy.ru" method="POST">
                     <h3 class="meassage-form-heading">Send us a Message</h3>
                     <label class="visually-hidden" for="name-input">Your name</label>
-                    <input class="input" id="name-input" type="text" placeholder="Name" name="name" required>
+                    <input class="input" id="name-input" type="text" placeholder="Name" name="name" spellcheck="false" required>
                     <label class="visually-hidden" for="email-input">Your email</label>
-                    <input class="input" id="email-input" type="email" placeholder="Email" name="email" required>
+                    <input class="input" id="email-input" type="email" placeholder="Email" name="email" spellcheck="false" required>
                     <label class="visually-hidden" for="tel-input">Your phone number</label>
-                    <input class="input" id="tel-input" type="tel" placeholder="Mobile" name="phone" required>
+                    <input class="input" id="tel-input" type="tel" placeholder="Mobile" name="phone" spellcheck="false" required>
                     <div class="communication-box">
                         <p class="communication-box-text">
                             Preferred mode of Communication
                         </p>
-                        <label>
-                            <input class="radio-input" type="radio" name="type">Email
+                        <label id="email-input">
+                            <input class="radio-input" id="email-input" type="radio" name="type">Email
                         </label>
-                        <label>
-                            <input class="radio-input" type="radio" name="type">Phone
+                        <label id="tel-input">
+                            <input class="radio-input" id="tel-input" type="radio" name="type">Phone
                         </label>
                     </div>
-                    <input class="input" type="text" name="message" placeholder="Message" required>
+                    <textarea class="textarea" name="message" placeholder="Message" required></textarea>
                     <button class="submit-btn" type="submit">Submit</button>
                 </form>
             </main>
