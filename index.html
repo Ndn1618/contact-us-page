@@ -17,9 +17,12 @@
             <main class="site-main">
                 <form class="message-form" action="https://echo.htmlacademy.ru" method="POST">
                     <h3 class="meassage-form-heading">Send us a Message</h3>
-                    <input class="input" type="text" placeholder="Name" name="name">
-                    <input class="input" type="email" placeholder="Email" name="email">
-                    <input class="input" type="tel" placeholder="Mobile" name="phone">
+                    <label class="visually-hidden" for="name-input">Your name</label>
+                    <input class="input" id="name-input" type="text" placeholder="Name" name="name" required>
+                    <label class="visually-hidden" for="email-input">Your email</label>
+                    <input class="input" id="email-input" type="email" placeholder="Email" name="email" required>
+                    <label class="visually-hidden" for="tel-input">Your phone number</label>
+                    <input class="input" id="tel-input" type="tel" placeholder="Mobile" name="phone" required>
                     <div class="communication-box">
                         <p class="communication-box-text">
                             Preferred mode of Communication
@@ -31,7 +34,7 @@
                             <input class="radio-input" type="radio" name="type">Phone
                         </label>
                     </div>
-                    <input class="input" type="text" name="message" placeholder="Message">
+                    <input class="input" type="text" name="message" placeholder="Message" required>
                     <button class="submit-btn" type="submit">Submit</button>
                 </form>
             </main>

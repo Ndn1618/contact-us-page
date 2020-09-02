@@ -49,6 +49,8 @@ img {
     background-repeat: no-repeat;
     padding: 50px;
     box-shadow: 0 0 0 10px #621262;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .site-header {
@@ -101,9 +103,14 @@ img {
 
 .input {
     border: none;
-    border-bottom: 1px solid #bbb;
+    border-bottom: 2px solid #bbb;
     padding: 10px 0;
     margin-bottom: 40px;
+}
+
+.input:focus {
+    outline: none;
+    border-bottom-color: #621262;
 }
 
 .communication-box {
