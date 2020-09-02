@@ -135,6 +135,48 @@ img {
     color: #999;
 }
 
+.radio-input-box {
+    display: flex;
+}
+
+#email-input {
+    margin-right: 60px;
+}
+
+.input-radio:checked + .radio-input-span .checked-input-span {
+    opacity: 1;
+}
+
+.radio-input-span {
+    display: flex;
+    align-items: center;
+    color: #999;
+    position: relative;
+    z-index: 1;
+}
+
+.radio-input-span::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px #621262;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.checked-input-span {
+    content: "";
+    position: absolute;
+    left: 4.2px;
+    z-index: 1;
+    width: 17px;
+    height: 17px;
+    background-color: #621262;
+    border-radius: 50%;
+    opacity: 0;
+}
+
 .submit-btn {
     font-size: 23px;
     border: none;

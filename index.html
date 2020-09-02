@@ -27,12 +27,20 @@
                         <p class="communication-box-text">
                             Preferred mode of Communication
                         </p>
-                        <label id="email-input">
-                            <input class="radio-input" id="email-input" type="radio" name="type">Email
-                        </label>
-                        <label id="tel-input">
-                            <input class="radio-input" id="tel-input" type="radio" name="type">Phone
-                        </label>
+                        <div class="radio-input-box">
+                            <label id="email-input">
+                                <input class="visually-hidden input-radio" id="email-input" type="radio" name="type">
+                                <span class="radio-input-span">Email
+                                    <span class="checked-input-span"></span>
+                                </span>
+                            </label>
+                            <label id="tel-input">
+                                <input class="visually-hidden input-radio" id="tel-input" type="radio" name="type">
+                                <span class="radio-input-span">Phone
+                                    <span class="checked-input-span"></span>
+                                </span>
+                            </label>
+                        </div>
                     </div>
                     <textarea class="textarea" name="message" placeholder="Message" required></textarea>
                     <button class="submit-btn" type="submit">Submit</button>
