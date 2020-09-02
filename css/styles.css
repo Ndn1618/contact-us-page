@@ -38,4 +38,93 @@ img {
     padding-right: 24px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 30px;
+}
+
+.contact-page {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url("../img/contact-us.svg");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 50px;
+    box-shadow: 0 0 0 10px #621262;
+}
+
+.site-header {
+    width: 30%;
+}
+
+.site-header-heading {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 30px;
+}
+
+.site-header-text {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.message-form {
+    position: relative;
+    z-index: 1;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 40px;
+    box-shadow: -70px 0 0 -34px rgba(98, 18, 98, 0.8),
+        0 0 5px 2px #ccc;
+}
+
+.message-form::before {
+    content: "Contact Info";
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: -10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+}
+
+.meassage-form-heading {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #777;
+}
+
+.input {
+    border: none;
+    border-bottom: 1px solid #bbb;
+    padding: 10px 0;
+    margin-bottom: 40px;
+}
+
+.communication-box {
+    margin-bottom: 40px;
+}
+
+.communication-box-text {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #999;
+}
+
+.submit-btn {
+    border: none;
+    background-color: #621262;
+    padding: 17px 80px;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-right: 30px;
 }
