@@ -8,6 +8,32 @@
     <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
-
+    <div class="container">
+        <header class="site-header">
+            <h2 class="site-header-heading">Get in Touch</h2>
+            <p class="site-header-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex temporibus aliquam dolore sunt cumque dolores placeat esse obcaecati commodi dolorum.</p>
+        </header>
+        <main class="site-main">
+            <form class="message-form" action="https://echo.htmlacademy.ru" method="POST">
+                <h3 class="meassage-form-heading">Send us a Message</h3>
+                <input type="text" placeholder="Name" name="name">
+                <input type="email" placeholder="Email" name="email">
+                <input type="tel" placeholder="Mobile" name="phone">
+                <div class="communication-box">
+                    <p class="communication-box-text">
+                        Preferred mode of Communication
+                    </p>
+                    <label>
+                        <input type="radio" name="type">Email
+                    </label>
+                    <label>
+                        <input type="radio" name="type">Phone
+                    </label>
+                </div>
+                <input type="text" name="message" placeholder="Message">
+                <button class="submit-btn" type="submit">Submit</button>
+            </form>
+        </main>
+    </div>
 </body>
 </html>
